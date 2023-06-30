@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="./static/login.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="926518817672-d6sbqlci75h4k53obim4452a3died58m.apps.googleusercontent.com">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="c1">
+            <div id="logo" width="100">
+                公司名稱
+                <img src='./static/pencil.png' width="50">
+                <br>
+                Company name
+            </div>
+        </div>
+        
+    </div>
+    <form method="POST" action="/login">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script src="./static/login.js"></script>​
+</body>
